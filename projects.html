@@ -79,12 +79,18 @@
           assigning the most optimal debris to each drone, and leaving the debris with no connections so that they move
           in a straight line. This project demonstrates proficiency in programming Python, Julia, LaTeX, and 
           understanding of concepts in controls and multi-agent systems.
+
+          This project focuses on addressing the growing problem of space debris in Earth’s orbit. The solution involves using a Linear Consensus Protocol (LCP) to optimize the process of deorbiting debris, particularly in Medium and High Earth Orbits (MEO and HEO). Unlike traditional methods that target debris clusters, this approach dynamically assigns agents to debris, aiming to minimize fuel consumption while ensuring all detected debris is safely deorbited.
         </p>
         <h3 class="mb-0">My Contributions</h3>
         <p>Designed the algorithm that detects the available debris, estimates which of the available robots
           will be closer to that debris in the near future, and assigns that robot to that debris.
           Also designed the algorithm to "deorbit" the debris once the robot is within a certain distance of it,
           as well as the function to make the robots and debris move as desired, and plotting.
+
+          •	Orbit Propagation: I developed the code to simulate the orbits of debris and agents in both Cartesian and spherical coordinate systems, laying the foundation for the deorbiting process.
+          •	Algorithm Implementation: I implemented and tested the LCP in Cartesian coordinates, which allowed agents to effectively target and deorbit debris. Additionally, I attempted to adapt this protocol to spherical coordinates, though further refinement is needed.
+          •	Analysis and Documentation: I analyzed the challenges and findings of the project, documenting the limitations of using LCP for orbital debris and suggesting potential improvements.
         </p>
         <p>This project was first written in Python, and I translated it to Julia for more efficient computing
           as the simulations can get quite slow as the number of objects increase.
@@ -92,9 +98,13 @@
         <h3 class="mb-0">Results</h3>
         <p>This is the first step to get to the goal of applying a similar protocol that commands
           optimal orbital maneuvers to complete this task. 
-          You can read the full report "link"here.</p>
-        <img src="projects/project 1/project1.gif" class="img-fluid" alt="Project 1 Details">
-        <img src="projects/project 1/project1.gif" class="img-fluid" alt="Project 1 Details">
+
+          •	Successfully demonstrated the LCP in Cartesian coordinates, where agents could deorbit debris effectively in a simulated 3D environment.
+          •	Identified the limitations of LCP in spherical coordinates, where nonlinear orbital dynamics require a more advanced consensus method.
+          •	Proposed future directions for improving the deorbiting algorithm, including exploring nonlinear consensus methods and optimizing trajectories for multiple debris.
+        
+          You can read the full report <a href="projects/project 1/project1_report.pdf" target="_blank">here</a>.</p>
+        <img src="projects/project 1/project1.gif" class="aspect-ratio-img" alt="Project 1 Details">
 
       </div>
     </section>
@@ -121,7 +131,8 @@
         </li>
         <li>Integrated and Efficient System: The communications subsystem was seamlessly integrated with other satellite systems, balancing power usage with performance. This integration contributes to the overall efficiency and reliability of the SCOPE mission, helping to ensure that the mission goals are met within the expected timeline.</p>
         </li>
-          <img src="projects/project 2/project2.png" class="img-fluid" alt="Project 2 Details">
+        You can read the full report <a href="projects/project 2/project2_report.pdf" target="_blank">here</a>.
+        <img src="projects/project 2/project2.png" class="aspect-ratio-img" alt="Project 2 Details">
       </div> 
     </section>
     
@@ -141,7 +152,57 @@
         </li>
         <li>Engaging Staging Animation: The animation adds a dynamic element to the project, vividly illustrating the Soyuz-FG’s staging process. This feature not only enhances the visual appeal of the project but also demonstrates the practical application of Siemens NX in creating functional and educational simulations.</p>
         </li>
-        <img src="projects/project 3/project3.gif" class="img-fluid" alt="Project 3 Details">
+        
+        <div class="projects-grid">
+          <div class="project-container">
+            <img class="aspect-ratio-img" src="projects/project 3/project3.gif" alt="Image description">
+          </div>
+          <div class="project-container">
+            <div id="cadCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="projects/project 3/Full Assembly picture.tif" class="d-block w-100" alt="Image 1">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="projects/project 3/Zoomed in grid.tif" class="d-block w-100" alt="Image 2">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="projects/project 3/Zoomed in SAS.tif" class="d-block w-100" alt="Image 3">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="projects/project 3/Zoomed in booster.tif" class="d-block w-100" alt="Image 3">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="projects/project 3/Zoomed in Stage 2.tif" class="d-block w-100" alt="Image 3">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="projects/project 3/Zoomed in Stage 3.tif" class="d-block w-100" alt="Image 3">
+                  <div class="carousel-caption d-none d-md-block">
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#cadCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#cadCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
 
@@ -154,8 +215,10 @@
         <h3 class="mb-0">My Contributions</h3>
         <p>Details</p>
         <h3 class="mb-0">Results</h3>
-        <p>Details</p>
-        <img src="projects/project 4/project4.gif" class="img-fluid" alt="Project 4 Details">
+        <p>Details
+          You can read the full report <a href="projects/project 5/project5_report.pdf" target="_blank">here</a>.
+        </p>
+        <img src="projects/project 4/project4.gif" class="aspect-ratio-img" alt="Project 4 Details">
       </div>
     </section>
 
@@ -169,7 +232,33 @@
         <p>Details</p>
         <h3 class="mb-0">Results</h3>
         <p>Details</p>
-        <img src="projects/project 5/project5.PNG" class="img-fluid" alt="Project 5 Details">
+        <div id="LRICarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="projects/project 5/project5.PNG" class="d-block w-100" alt="Image 1">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="projects/project 5/EngineExplosion.PNG" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="projects/project 5/RenderEngine.PNG" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#LRICarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#LRICarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -193,7 +282,34 @@
         </li>
         <li>Integrated and Efficient System: The communications subsystem was seamlessly integrated with other satellite systems, balancing power usage with performance. This integration contributes to the overall efficiency and reliability of the SCOPE mission, helping to ensure that the mission goals are met within the expected timeline.</p>
         </li>
-        <img src="projects/project 6/project6.PNG" class="img-fluid" alt="Project 6 Details">
+        You can read the full report <a href="projects/project 6/project6_report.pdf" target="_blank">here</a>.
+        <div id="lcCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="projects/project 6/project 6.pdf" class="d-block w-100" alt="Image 1">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="projects/project 6/final_limit_cycles.pdf" class="d-block w-100" alt="Image 2">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="projects/project 6/convergence.pdf" class="d-block w-100" alt="Image 3">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#lcCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#lcCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
       </div>
     </section>
 
