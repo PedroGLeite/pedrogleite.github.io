@@ -59,6 +59,9 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="index.html#interests">Interests</a>
         </li>
+        <li class="nav-item lang-text">
+          <span class="mr text-primary">EN</span> <a href="projetos.html" class="lang-switcher">PT</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -69,41 +72,30 @@
     <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project1">
       <div class="my-auto">
         <h2 class="mb-5">Application of Linear Consensus Protocol to Space Debris Deorbiting</h2>
-        <h3 class="mb-0">Skills Used</h3>
-        <p>Python, Julia, LaTeX</p>
         <h3 class="mb-0">Overview</h3>
-        <p>This is a simulation-based project with the goal of commanding autonomous robots that will deorbit
-          debris in orbit. For our purposes, we design the control protocol that tells the robots to rendezvous
-          with the debris they detect, and we assume the specific deorbiting mechanism is given. This is achieved
-          by applying the Linear Consensus Protocol approach to a series of robots and debris, intelligently
-          assigning the most optimal debris to each drone, and leaving the debris with no connections so that they move
-          in a straight line. This project demonstrates proficiency in programming Python, Julia, LaTeX, and 
-          understanding of concepts in controls and multi-agent systems.
 
           This project focuses on addressing the growing problem of space debris in Earth’s orbit. The solution involves using a Linear Consensus Protocol (LCP) to optimize the process of deorbiting debris, particularly in Medium and High Earth Orbits (MEO and HEO). Unlike traditional methods that target debris clusters, this approach dynamically assigns agents to debris, aiming to minimize fuel consumption while ensuring all detected debris is safely deorbited.
         </p>
         <h3 class="mb-0">My Contributions</h3>
-        <p>Designed the algorithm that detects the available debris, estimates which of the available robots
-          will be closer to that debris in the near future, and assigns that robot to that debris.
-          Also designed the algorithm to "deorbit" the debris once the robot is within a certain distance of it,
-          as well as the function to make the robots and debris move as desired, and plotting.
-
-          •	Orbit Propagation: I developed the code to simulate the orbits of debris and agents in both Cartesian and spherical coordinate systems, laying the foundation for the deorbiting process.
-          •	Algorithm Implementation: I implemented and tested the LCP in Cartesian coordinates, which allowed agents to effectively target and deorbit debris. Additionally, I attempted to adapt this protocol to spherical coordinates, though further refinement is needed.
-          •	Analysis and Documentation: I analyzed the challenges and findings of the project, documenting the limitations of using LCP for orbital debris and suggesting potential improvements.
-        </p>
+        <li><b>Orbit Propagation:</b> I developed the code to simulate the orbits of debris and agents in both Cartesian and spherical coordinate systems, laying the foundation for the deorbiting process.
+        </li>
+        <li><b>Algorithm Implementation:</b> I implemented and tested the LCP in Cartesian coordinates, which allowed agents to effectively target and deorbit debris. Additionally, I attempted to adapt this protocol to spherical coordinates, though further refinement is needed.
+        </li>
+        <li><b>Analysis and Documentation:</b> I analyzed the challenges and findings of the project, documenting the limitations of using LCP for orbital debris and suggesting potential improvements.
+        </li>
+        
         <p>This project was first written in Python, and I translated it to Julia for more efficient computing
           as the simulations can get quite slow as the number of objects increase.
         </p>
         <h3 class="mb-0">Results</h3>
-        <p>This is the first step to get to the goal of applying a similar protocol that commands
-          optimal orbital maneuvers to complete this task. 
-
-          •	Successfully demonstrated the LCP in Cartesian coordinates, where agents could deorbit debris effectively in a simulated 3D environment.
-          •	Identified the limitations of LCP in spherical coordinates, where nonlinear orbital dynamics require a more advanced consensus method.
-          •	Proposed future directions for improving the deorbiting algorithm, including exploring nonlinear consensus methods and optimizing trajectories for multiple debris.
-        
-          You can read the full report <a href="projects/project 1/project1_report.pdf" target="_blank">here</a>.</p>
+        <li>Successfully demonstrated the LCP in Cartesian coordinates, where agents could deorbit debris effectively in a simulated 3D environment.
+        </li>
+        <li>Identified the limitations of LCP in spherical coordinates, where nonlinear orbital dynamics require a more advanced consensus method.
+        </li>
+        <li>Proposed future directions for improving the deorbiting algorithm, including exploring nonlinear consensus methods and optimizing trajectories for multiple debris.
+        </li>
+        <br>
+        <p>You can read the full report <a href="projects/project 1/project1_report.pdf" target="_blank">here</a>.</p>
         <img src="projects/project 1/project1.gif" class="aspect-ratio-img" alt="Project 1 Details">
 
       </div>
@@ -118,19 +110,24 @@
         <p>The SCOPE (Mars Surveyor and Communications Orbiters for Positioning and Exploration) mission was designed to fulfill a dual purpose: scientific exploration and utility services on Mars. The mission is centered around two types of satellites—OPTIMUS and PRIME—which work together to map the mineral composition of Mars and provide vital communication and navigation services for other Mars missions. OPTIMUS focuses on scientific tasks, while PRIME ensures reliable communication relays and global positioning coverage. Together, these satellites meet the mission’s requirements over a planned operational period of at least five years.
         </p>
         <h3 class="mb-0">My Contributions</h3>
-        <li>Communications System Design: I was responsible for the development and implementation of the communications subsystem, ensuring that both the OPTIMUS and PRIME satellites could effectively communicate with Earth. This involved selecting the Deep Space Network (DSN) as our primary ground station for Mars-to-Earth communication. I performed detailed link budget analysis to ensure robust communication links under various conditions, accounting for factors like distance and potential interference.
+        <li><b>Communications System Design:</b> I was responsible for the development and implementation of the communications subsystem, ensuring that both the OPTIMUS and PRIME satellites could effectively communicate with Earth. This involved selecting the Deep Space Network (DSN) as our primary ground station for Mars-to-Earth communication. I performed detailed link budget analysis to ensure robust communication links under various conditions, accounting for factors like distance and potential interference.
         </li>
-        <li>Communication Hardware: I helped specify the necessary communications hardware, including high-gain antennas for both satellites. For OPTIMUS, I ensured that the Ka-band array was capable of maintaining a reliable connection with the PRIME relay satellites. The communication system was designed to operate efficiently within the mission’s power constraints while ensuring high data transfer rates essential for mission success.
+        <li><b>Communication Hardware:</b> I helped specify the necessary communications hardware, including high-gain antennas for both satellites. For OPTIMUS, I ensured that the Ka-band array was capable of maintaining a reliable connection with the PRIME relay satellites. The communication system was designed to operate efficiently within the mission’s power constraints while ensuring high data transfer rates essential for mission success.
         </li>
-        <li>Data Handling Coordination: I worked closely with the Command and Data Handling (C&DH) team to integrate the communications system with the satellite’s onboard computer. This integration ensured that data from the scientific payloads and other subsystems could be transmitted reliably back to Earth.</p>
+        <li><b>Data Handling Coordination:</b> I worked closely with the Command and Data Handling (C&DH) team to integrate the communications system with the satellite’s onboard computer. This integration ensured that data from the scientific payloads and other subsystems could be transmitted reliably back to Earth.</p>
         </li>
           <h3 class="mb-0">Results</h3>
-        <li>Successful Communication Strategy: The communications system I developed allows for consistent data transmission between Mars and Earth, even under challenging conditions such as solar conjunction. The DSN stations in Australia, Spain, and California were leveraged to ensure continuous coverage, maximizing data transfer opportunities.
+        <li><b>Successful Communication Strategy:</b> The communications system I developed allows for consistent data transmission between Mars and Earth, even under challenging conditions such as solar conjunction. The DSN stations in Australia, Spain, and California were leveraged to ensure continuous coverage, maximizing data transfer opportunities.
         </li>
-        <li>Robust Link Performance: The link budget analysis confirmed that our communication system could meet or exceed the required signal-to-noise ratios, ensuring clear communication even during critical mission phases. This robustness is vital for both the scientific and navigational aspects of the mission.
+        <li><b>Robust Link Performance:</b> The link budget analysis confirmed that our communication system could meet or exceed the required signal-to-noise ratios, ensuring clear communication even during critical mission phases. This robustness is vital for both the scientific and navigational aspects of the mission.
         </li>
-        <li>Integrated and Efficient System: The communications subsystem was seamlessly integrated with other satellite systems, balancing power usage with performance. This integration contributes to the overall efficiency and reliability of the SCOPE mission, helping to ensure that the mission goals are met within the expected timeline.</p>
+        <li><b>Integrated and Efficient System:</b> The communications subsystem was seamlessly integrated with other satellite systems, balancing power usage with performance. This integration contributes to the overall efficiency and reliability of the SCOPE mission, helping to ensure that the mission goals are met within the expected timeline.</p>
         </li>
+        <ul class="fa-ul">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>Won the class competition!
+          </li>
+        </ul>
         You can read the full report <a href="projects/project 2/project2_report.pdf" target="_blank">here</a>.
         <img src="projects/project 2/project2.png" class="aspect-ratio-img" alt="Project 2 Details">
       </div> 
@@ -143,14 +140,14 @@
         <h3 class="mb-0">Overview</h3>
         <p>This project showcases a detailed CAD model of the Soyuz-FG rocket, focusing on its exterior design. Created using Siemens NX, the model highlights the precision and capabilities of advanced CAD software in capturing the intricate details of this iconic spacecraft. The project includes a dynamic animation that demonstrates the rocket’s staging process, providing an interactive view of the model in action.</p>
         <h3 class="mb-0">My Contributions</h3>
-        <li>Exterior Modeling in Siemens NX: I was responsible for designing the 3D model of the Soyuz-FG rocket using Siemens NX. The focus was on accurately replicating the rocket’s exterior features, including the boosters, central core, and upper stage, while ensuring the model’s alignment with the actual design specifications.
+        <li><b>Exterior Modeling in Siemens NX:</b> I was responsible for designing the 3D model of the Soyuz-FG rocket using Siemens NX. The focus was on accurately replicating the rocket’s exterior features, including the boosters, central core, and upper stage, while ensuring the model’s alignment with the actual design specifications.
         </li>
-        <li>Staging Animation: Utilizing Siemens NX’s animation tools, I created a simulation of the rocket’s staging process. This animation visually represents the separation of the boosters from the central core, offering a realistic depiction of the Soyuz-FG in operation.</p>
+        <li><b>Staging Animation:</b> Utilizing Siemens NX’s animation tools, I created a simulation of the rocket’s staging process. This animation visually represents the separation of the boosters from the central core, offering a realistic depiction of the Soyuz-FG in operation.</p>
         </li>
         <h3 class="mb-0">Results</h3>
-        <li>High-Precision Soyuz-FG Model: The final model, rendered in Siemens NX, provides a detailed and accurate representation of the Soyuz-FG’s exterior. The project effectively showcases the design’s complexity and the software’s ability to handle detailed modeling tasks.
+        <li><b>High-Precision Soyuz-FG Model:</b> The final model, rendered in Siemens NX, provides a detailed and accurate representation of the Soyuz-FG’s exterior. The project effectively showcases the design’s complexity and the software’s ability to handle detailed modeling tasks.
         </li>
-        <li>Engaging Staging Animation: The animation adds a dynamic element to the project, vividly illustrating the Soyuz-FG’s staging process. This feature not only enhances the visual appeal of the project but also demonstrates the practical application of Siemens NX in creating functional and educational simulations.</p>
+        <li><b>Engaging Staging Animation:</b> The animation adds a dynamic element to the project, vividly illustrating the Soyuz-FG’s staging process. This feature not only enhances the visual appeal of the project but also demonstrates the practical application of Siemens NX in creating functional and educational simulations.</p>
         </li>
         
         <div class="projects-grid">
@@ -211,12 +208,27 @@
       <div class="my-auto">
         <h2 class="mb-5">Control of a Quadrotor Drone</h2>
         <h3 class="mb-0">Overview</h3>
-        <p>Details</p>
+        <p>This project focused on designing, implementing, and testing a control and observer system for a quadrotor drone, with the objective of guiding the drone through a series of rings from a starting to a finishing position without crashing. Utilizing linear control theory, the project involved developing a state-space model of the drone’s dynamics, applying Linear Quadratic Regulator (LQR) techniques for control, and testing the system through simulations. The goal was to achieve a reliable, efficient control system that would ensure the drone’s successful navigation through the course.</p>
         <h3 class="mb-0">My Contributions</h3>
-        <p>Details</p>
+        <li><b>System Modeling:</b> I worked on linearizing the drone’s equations of motion and sensor models, deriving a state-space representation that formed the basis for the control system. This involved extensive mathematical work to ensure the model accurately captured the drone’s dynamics.
+        </li>
+        <li><b>Control and Observer Design:</b> I implemented the LQR-based controller and observer, which were critical in maintaining the drone’s stability and ensuring it followed the desired trajectory. I optimized the controller’s performance by fine-tuning the weight matrices, balancing the trade-off between speed and reliability.
+        </li>
+        <li><b>Simulation and Testing:</b> I conducted extensive simulations using PyBullet to test the control system. This included diagnosing failures, analyzing the system’s performance across 100 test runs, and making adjustments to improve success rates and completion times.
+        </li>
         <h3 class="mb-0">Results</h3>
-        <p>Details
-          You can read the full report <a href="projects/project 5/project5_report.pdf" target="_blank">here</a>.
+        <li><b>High Success Rate:</b> The control system achieved a 98% success rate in simulations, with the drone successfully navigating the ring course in nearly all test runs. This exceeded the project’s initial goal of a 90% success rate.
+        </li>
+        <li><b>Efficient Performance:</b> The drone completed the course in an average time of 11.27 seconds, well below the 30-second target. The system was robust enough to handle sensor noise and other potential disturbances, demonstrating its effectiveness in a simulated environment.
+        </li>
+        <li><b>Insights for Future Work:</b> While the project met its primary objectives, the results also highlighted areas for further improvement, such as reducing computational run-time errors and enhancing the collision avoidance system. These insights pave the way for future developments in drone control systems.</p>
+        </li>
+        <ul class="fa-ul">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>Won the class race!
+          </li>
+        </ul>
+        <p>You can read the full report <a href="projects/project 4/project4_report.pdf" target="_blank">here</a>.
         </p>
         <img src="projects/project 4/project4.gif" class="aspect-ratio-img" alt="Project 4 Details">
       </div>
@@ -227,11 +239,20 @@
       <div class="my-auto">
         <h2 class="mb-5">Thrust Chamber of Liquid Bipropellent Rocket</h2>
         <h3 class="mb-0">Overview</h3>
-        <p>Details</p>
+        <p>This project involved the critical design review of the Grunt Engine, an 1100 lbf Jet-A/LOx liquid rocket engine developed by the AIAA Liquid Rocket Initiative. The Grunt Engine was designed for testing at Purdue’s Maurice J. Zucrow Laboratories, with the primary goal of validating the injector concept and demonstrating the team’s ability to design and build a functional liquid rocket engine. The project covers various aspects of the engine’s design, including injector design, combustion chamber sizing, and the integration of the engine with Zucrow Lab’s test stand.</p>
         <h3 class="mb-0">My Contributions</h3>
-        <p>Details</p>
+        <li><b>Combustion Chamber Sizing:</b> I developed the code to size the combustion chamber, ensuring that it met the required parameters for efficient combustion. The code was critical in determining the volume of the chamber based on the characteristic length (L*) and other engine parameters, ensuring optimal propellant residence time and chamber efficiency.
+        </li>
+        <li><b>Adapter Design for Test Stand Integration:</b> I designed the adapter that interfaces the Grunt Engine with Zucrow Lab’s test stand. This adapter was crucial for securely mounting the engine during testing, ensuring that all connections were stable and capable of handling the operational loads and thermal stresses during the engine’s hot fire tests.
+        </li>
         <h3 class="mb-0">Results</h3>
-        <p>Details</p>
+        <li><b>Accurate Combustion Chamber Sizing:</b> The combustion chamber was successfully sized according to the specified requirements, ensuring that the engine could operate efficiently with the given propellant flow rates and chamber pressure. The design balances manufacturability with performance, reducing potential efficiency losses during combustion.
+        </li>
+        <li><b>Successful Test Stand Integration:</b> The adapter design allowed for seamless integration of the Grunt Engine with Zucrow Lab’s test stand, facilitating a secure and stable test setup. This ensured that the engine could be tested safely, providing valuable data to validate the design and guide future improvements.
+        </li>
+        <br>
+        <p>You can read the full report <a href="projects/project 5/project5_report.pdf" target="_blank">here</a>.
+        </p>
         <div id="LRICarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -262,27 +283,28 @@
       </div>
     </section>
 
-    <!-- Project 5 Section -->
-    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project5">
+    <!-- Project 6 Section -->
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="project6">
       <div class="my-auto">
         <h2 class="mb-5">Limit Cycles in Predator-Prey Systems</h2>
         <h3 class="mb-0">Overview</h3>
         <p>This project is a literature review focused on the dynamic behavior of predator-prey systems, specifically exploring the existence and stability of limit cycles—a phenomenon where predator and prey populations oscillate in a predictable pattern over time. The review delves into the mathematical underpinnings of these cycles by analyzing seminal works by Robert M. May and Michael E. Gilpin. By studying these systems through the lens of nonlinear differential equations and concepts like Hopf bifurcations, this project seeks to enhance our understanding of how predator-prey populations can coexist in a stable, yet dynamic equilibrium.</p>
         <h3 class="mb-0">My Contributions</h3>
-        <li>Mathematical Analysis: I conducted a thorough mathematical analysis of predator-prey models, starting with the linearization of the system at its equilibrium points. This involved calculating eigenvalues to determine the stability of these points and exploring how small perturbations could lead to large-scale population oscillations, known as limit cycles.
+        <li><b>Mathematical Analysis:</b> I conducted a thorough mathematical analysis of predator-prey models, starting with the linearization of the system at its equilibrium points. This involved calculating eigenvalues to determine the stability of these points and exploring how small perturbations could lead to large-scale population oscillations, known as limit cycles.
         </li>  
-        <li>Nondimensionalization: To simplify the complex system and make the analysis more generalizable, I nondimensionalized the equations governing predator-prey interactions. This step reduced the number of parameters and highlighted the key factors influencing system behavior, making it easier to study the effects of various parameters on population dynamics.
+        <li><b>Nondimensionalization:</b> To simplify the complex system and make the analysis more generalizable, I nondimensionalized the equations governing predator-prey interactions. This step reduced the number of parameters and highlighted the key factors influencing system behavior, making it easier to study the effects of various parameters on population dynamics.
         </li>
-        <li>Simulation and Visualization: I reproduced the results from the literature through simulations, generating plots that demonstrate how the predator-prey system evolves over time. These visualizations include phase plots that show the formation of stable limit cycles and how different initial conditions converge to these cycles, validating the theoretical predictions.
+        <li><b>Simulation and Visualization:</b> I reproduced the results from the literature through simulations, generating plots that demonstrate how the predator-prey system evolves over time. These visualizations include phase plots that show the formation of stable limit cycles and how different initial conditions converge to these cycles, validating the theoretical predictions.
         </li>
         <h3 class="mb-0">Results</h3>
-        <li>Successful Communication Strategy: The communications system I developed allows for consistent data transmission between Mars and Earth, even under challenging conditions such as solar conjunction. The DSN stations in Australia, Spain, and California were leveraged to ensure continuous coverage, maximizing data transfer opportunities.
+        <li><b>Stability of Limit Cycles:</b> The analysis confirmed that predator-prey systems can exhibit stable limit cycles, where the populations oscillate indefinitely in a predictable pattern. These cycles are stable even when the system is perturbed, as trajectories tend to converge to the limit cycle over time.
         </li>
-        <li>Robust Link Performance: The link budget analysis confirmed that our communication system could meet or exceed the required signal-to-noise ratios, ensuring clear communication even during critical mission phases. This robustness is vital for both the scientific and navigational aspects of the mission.
+        <li><b>Impact of Parameter Variation:</b> By varying key parameters, particularly around the Hopf bifurcation point, the simulations demonstrated how the system transitions from a stable equilibrium to a limit cycle. This transition has significant implications for ecological stability, as it shows how small changes in environmental conditions or species interactions can drastically alter population dynamics.
         </li>
-        <li>Integrated and Efficient System: The communications subsystem was seamlessly integrated with other satellite systems, balancing power usage with performance. This integration contributes to the overall efficiency and reliability of the SCOPE mission, helping to ensure that the mission goals are met within the expected timeline.</p>
+        <li><b>Ecological and Conservation Insights:</b> The findings of this review have practical implications for ecological management and conservation. Understanding how and why predator-prey populations oscillate can inform strategies to maintain biodiversity and ecosystem stability, especially in the face of environmental changes.
         </li>
-        You can read the full report <a href="projects/project 6/project6_report.pdf" target="_blank">here</a>.
+        <br>
+        <p>You can read the full report <a href="projects/project 6/project6_report.pdf" target="_blank">here</a>.</p>
         <div id="lcCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
           <div class="carousel-inner">
             <div class="carousel-item active">

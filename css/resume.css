@@ -220,3 +220,33 @@ a {
 .carousel-control-next-icon {
   filter: invert(100%);
 }
+
+.custom-icon {
+  width: 45px;
+  height: 45px;
+  vertical-align: center; /* Aligns with the other icons */
+  fill: currentColor;
+}
+  .custom-icon:hover {
+  color: #FF5F05; /* Example hover color */
+  }
+
+
+.flex { display: flex; }
+.mr { margin-right: 1em; 
+color:#FF5F05}
+
+.lang-switcher {
+  color: inherit; /* Make PT the same color as the rest of the text */
+  text-decoration: none;
+}
+
+.lang-switcher:hover {
+  color: #C84113; /* Highlight PT when hovered */
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.lang-text {
+  font-weight: 600; /* Adjust to match the rest of the navbar text */
+  font-family: inherit; /* Inherit the same font family */
+}
